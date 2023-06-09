@@ -14,7 +14,7 @@ MODULE_VERSION(myversion);
 
 static int __init kmm_ci_init(void) {
     printk(KERN_INFO "Hello, World! from: %s\n", module_name(THIS_MODULE));
-    printk(KERN_INFO "My version is: %s\n", mystring);
+    printk(KERN_INFO "My version is: %s\n", myversion);
     return 0;
 }
 
