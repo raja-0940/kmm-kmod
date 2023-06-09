@@ -5,12 +5,12 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Quentin Barrand");
 MODULE_DESCRIPTION("A simple kernel module for KMM CI");
+MODULE_VERSION(“0.01”);
 
 static char *myversion = "1.0.0";
 module_param(myversion, charp, 0000);
 
 MODULE_PARM_DESC(myversion, "Version string");
-MODULE_VERSION(,myversion);
 
 static int __init kmm_ci_init(void) {
     printk(KERN_INFO "Hello, World! from: %s\n", module_name(THIS_MODULE));
