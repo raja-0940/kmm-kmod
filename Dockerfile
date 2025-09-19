@@ -1,4 +1,4 @@
-FROM docker.io/library/alpine:latest
+FROM alpine
 
 RUN ["apk", "add", "kmod"]
 
