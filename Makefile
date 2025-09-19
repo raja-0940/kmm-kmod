@@ -15,5 +15,5 @@ obj-m += kmm_ci_a.o
 obj-m += $(MY_MODULE)
 
 all:
-	make -C $(KERNEL_SRC_DIR) $(MAKE_OPTS) M=$(PWD) modules
+	make -C /usr/src/kernels/$(KVER) M=$(PWD) modules
 
